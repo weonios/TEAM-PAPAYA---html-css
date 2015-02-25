@@ -11,18 +11,31 @@ body{
     background-repeat: no-repeat;
 }
 
+header{
+    padding-left: 100px;
+    padding-top: 20px;
+}
+
+header img{
+    width: 80px;
+    height: 85px;
+    float: left;
+    box-shadow: 5px 5px 5px black;
+}
+
 header ,footer{
     height: 120px;
     background-color: #3b5997;
+
 }
 
 header h1{
-    padding-left: 150px;
-    padding-top: 20px;
+    padding-left: 10px;
+    /*padding-top: 20px;*/
     color: white;
     text-shadow: 5px 5px 5px black;
-    width: 50%;
-    height: 100%;
+    width: 500px;
+    height: 100px;
     float: left;
 }
 
@@ -39,7 +52,7 @@ header a{
 }
 
 #white-list-sheet{
-    width: 800px;
+    width: 900px;
     height: 700px;
     /*background-color: white;*/
     margin: 50px auto;
