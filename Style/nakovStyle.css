@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+}
+
+#wrapper{
+    background-image: url("../Image/despicable_me_minions-wide.jpg");
+    background-repeat: no-repeat;
+}
+
+header{
+    padding-left: 100px;
+    padding-top: 20px;
+}
+
+header img{
+    width: 80px;
+    height: 85px;
+    float: left;
+    box-shadow: 5px 5px 5px black;
+}
+
+header ,footer{
+    height: 120px;
+    background-color: #3b5997;
+
+}
+
+header h1{
+    padding-left: 10px;
+    /*padding-top: 20px;*/
+    color: white;
+    text-shadow: 5px 5px 5px black;
+    width: 500px;
+    height: 100px;
+    float: left;
+}
+
+header nav{
+    float: left;
+    vertical-align: bottom;
+    padding-top: 95px;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+}
+#leftAside{
+    width: 190px;
+    height: 700px;
+    background-color: lightblue;
+    border: 1px solid #000;
+    float: left;
+    margin-top: 50px;
+    margin-left: 10px;
+    border-radius: 10px;
+    overflow: scroll;
+}
+#headerAside{
+    background-color: yellow;
+    display: flex;
+    flex-direction: row;
+    color: #000000;
+    border-radius: 10px;
+
+}
+#headerAside > a{
+    position: absolute;
+    margin-left: -100px;
+    color: crimson;
+}
+#headerAside > a > img{
+    width: 61px;
+    height: 100px;
+}
+#headerAside > a > img:hover{
+    width: 200px;
+    height: 200px;
+}
+.nakovName{
+    color: cornflowerblue;
+    margin-top: 20px;
+}
+
+
+#white-list-sheet{
+    width: 900px;
+    height: 700px;
+    /*background-color: white;*/
+    margin: 50px auto;
+    box-shadow: 20px 20px 10px black;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+#header-white-list-sheet{
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+}
+#header-white-list-sheet > a > img{
+    margin-left: -50px;
+}
