@@ -1,0 +1,74 @@
+body, button, div, section {
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
+
+body {
+	background-color:#00ACEC;
+}
+
+section {
+	margin:50px;
+	width:1000px;
+	height:700px;
+	background-color:white;
+	overflow:auto;
+	position:relative;
+}
+
+button {
+	position:absolute;
+	top:0;
+	left:0;
+	transition:top 1s ease, left 1s ease, width 2s ease, height 2s ease;	
+	-webkit-transition:top 1s ease, left 1s ease, width 2s ease, height 2s ease;
+	margin-left:0;	
+}
+
+div#only-pic {
+	width:100px;
+	height:50px;		
+}
+
+#butt0 {
+	top:220px;
+	left:540px;
+	width:370px;
+	height:440px;
+	z-index:4;
+}
+
+#butt1 {
+	top:360px;
+	left:150px;
+	width:290px;
+	height:250px;
+	z-index:0;
+	color:red;
+}
+
+#butt2 {
+	top:130px;
+	left:80px;
+	width:270px;
+	height:145px;
+	z-index:1;
+}
+
+#butt3 {
+	top:100px;
+	left:425px;
+	width:290px;
+	height:250px;
+	z-index:2;
+}
+
+#butt0>#only-pic0, #butt0>#middle-size0, #butt1>#only-pic1,  #butt1>#full-content1, #butt2>#middle-size2,  #butt2>#full-content2,  #butt3>#only-pic3,  #butt3>#middle-size3 {
+	display:none;
+}
+
+
+
+
+
