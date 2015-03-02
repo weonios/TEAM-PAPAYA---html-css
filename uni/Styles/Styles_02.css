@@ -1,0 +1,248 @@
+body, button, div, section , main, header, * {
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
+
+body {
+	background-color:#3b5997;
+} 
+
+body>header {
+	height:120px;
+} 
+
+main {
+	margin:40px;
+	width:1000px;
+	min-width:900px;	
+	overflow:auto;
+	position:relative;
+}
+
+button {
+	position:absolute;	
+	top:0;
+	left:0;
+	transition:top 1s ease, left 1s ease, width 2s ease, height 2s ease, box-shadow 3s ease;	
+	-webkit-transition:top 1s ease, left 1s ease, width 2s ease, height 2s ease, box-shadow 3s ease;
+	margin-left:0;	
+	background: rgba(35,90,255,0.5);
+	overflow:hidden;
+	display:table-cell;
+	
+    -o-box-shadow: 
+        0 2px 8px rgba(0,0,0,0.6),
+        inset 0 1px rgba(255,255,255,0.3),
+        inset 0 10px rgba(255,255,255,0.2),
+        inset 0 10px 20px rgba(255,255,255,0.25),
+        inset 0 -15px 30px rgba(0,0,0,0.3);
+
+    -webkit-box-shadow: 
+        0 2px 8px rgba(0,0,0,0.6),
+        inset 0 1px rgba(255,255,255,0.3),
+        inset 0 10px rgba(255,255,255,0.2),
+        inset 0 10px 20px rgba(255,255,255,0.25),
+        inset 0 -15px 30px rgba(0,0,0,0.3);
+
+    -moz-box-shadow:
+        0 2px 8px rgba(0,0,0,0.6),
+        inset 0 1px rgba(255,255,255,0.3),
+        inset 0 10px rgba(255,255,255,0.2),
+        inset 0 10px 20px rgba(255,255,255,0.25),
+        inset 0 -15px 30px rgba(0,0,0,0.3);
+	
+	box-shadow: 
+        0 2px 8px rgba(0,0,0,0.6), /* rgba(0,0,0,0.5)Exterior Shadow */
+        inset 0 1px rgba(255,255,255,0.3), /* Top light Line */
+        inset 0 10px rgba(255,255,255,0.2), /* Top Light Shadow */
+        inset 0 10px 20px rgba(255,255,255,0.25), /* Sides Light Shadow */
+        inset 0 -15px 30px rgba(0,0,0,0.3); /* Dark Background */		
+	
+	
+	outline:none;
+	color:white;
+}
+
+button:hover {
+	box-shadow:none;
+	
+	cursor:pointer;
+}
+
+div#only-pic {
+	width:100px;
+	height:50px;		
+}
+
+#butt0 {
+	top:220px;
+	left:540px;
+	width:370px;
+	height:450px;
+	z-index:4;
+}
+
+#butt1 {
+	top:360px;
+	left:150px;
+	width:300px;
+	height:300px;
+	z-index:0;
+	color:red;
+}
+
+#butt2 {
+	top:130px;
+	left:80px;
+	width:250px;
+	height:150px;
+	z-index:1;
+}
+
+#butt3 {
+	top:100px;
+	left:425px;
+	width:300px;
+	height:300px;
+	z-index:2;
+}
+
+#butt0>#only-pic0, #butt0>#middle-size0, #butt1>#only-pic1,  #butt1>#full-content1, #butt2>#middle-size2,  #butt2>#full-content2,  #butt3>#only-pic3,  #butt3>#full-content3 {
+	display:none;
+}
+
+#wrapper {
+	background-image:url('../img/minio-background.jpg');
+	background-repeat:repeat;
+	background-size: 954px 850px;	
+	background-position: 35% 0;
+	overflow:auto;	
+	padding:15px;
+	display:flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
+
+.siders {	
+	width:100%;
+	background-color:white;
+	opacity:0.9;
+	border:2px solid lightgray;
+}
+
+
+#field , .siders  {	
+	height:700px;
+	margin:auto;
+}
+
+#field {	
+	min-width:1000px;	
+}
+
+#left-sider {
+	width:8%;
+	transition:width 2s ease,box-shadow 3s ease;
+	box-shadow: -15px 15px 10px rgba(0,0,0,0.7);
+}
+
+#right-sider {
+	width:14%;
+	transition:width 2s ease,box-shadow 3s ease;
+	box-shadow: -20px 20px 15px rgba(0,0,0,0.9);
+}
+
+main > button > div {
+	width:100%;
+	height:100%;	
+	vertical-align:bottom;
+	text-align:center;
+	padding:3px;
+	padding-top:0;
+}
+
+main > button > div:before{
+	position:absolute;	
+    content: '';
+    background: rgba(35,90,255,0.2);
+
+	
+    -o-box-shadow: 
+        0 2px 8px rgba(0,0,0,0.5),
+        inset 0 1px rgba(255,255,255,0.3),
+        inset 0 10px rgba(255,255,255,0.2),
+        inset 0 10px 20px rgba(255,255,255,0.25),
+        inset 0 -15px 30px rgba(0,0,0,0.3);
+
+    -webkit-box-shadow: 
+        0 2px 8px rgba(0,0,0,0.5),
+        inset 0 1px rgba(255,255,255,0.3),
+        inset 0 10px rgba(255,255,255,0.2),
+        inset 0 10px 20px rgba(255,255,255,0.25),
+        inset 0 -15px 30px rgba(0,0,0,0.3);
+
+    -moz-box-shadow:
+        0 2px 8px rgba(0,0,0,0.5),
+        inset 0 1px rgba(255,255,255,0.3),
+        inset 0 10px rgba(255,255,255,0.2),
+        inset 0 10px 20px rgba(255,255,255,0.25),
+        inset 0 -15px 30px rgba(0,0,0,0.3);
+	
+	box-shadow: 
+        0 2px 8px rgba(0,0,0,0.5), /* rgba(0,0,0,0.5)Exterior Shadow */
+        inset 0 1px rgba(255,255,255,0.3), /* Top light Line */
+        inset 0 10px rgba(255,255,255,0.2), /* Top Light Shadow */
+        inset 0 10px 20px rgba(255,255,255,0.25), /* Sides Light Shadow */
+        inset 0 -15px 30px rgba(0,0,0,0.3); /* Dark Background */	
+    width: 130%;
+    height: 100%;
+	left:-15px;
+}
+
+main > button:hover > div:before{
+	 background: rgba(255,255,255,0);
+	
+    -o-box-shadow: 
+        0 2px 8px rgba(0,0,0,0.5),
+        inset 0 1px rgba(255,255,255,0.3),
+        inset 0 10px rgba(255,255,255,0.2),
+        inset 0 10px 20px rgba(255,255,255,0.25),
+        inset 0 -15px 30px rgba(0,0,0,0.3);
+
+    -webkit-box-shadow: 
+        0 2px 8px rgba(0,0,0,0.5),
+        inset 0 1px rgba(255,255,255,0.3),
+        inset 0 10px rgba(255,255,255,0.2),
+        inset 0 10px 20px rgba(255,255,255,0.25),
+        inset 0 -15px 30px rgba(0,0,0,0.3);
+
+    -moz-box-shadow:
+        0 2px 8px rgba(0,0,0,0.5),
+        inset 0 1px rgba(255,255,255,0.3),
+        inset 0 10px rgba(255,255,255,0.2),
+        inset 0 10px 20px rgba(255,255,255,0.25),
+        inset 0 -15px 30px rgba(0,0,0,0.3);
+	
+	box-shadow: 
+        0 2px 8px rgba(0,0,0,0.5), /* rgba(0,0,0,0.5)Exterior Shadow */
+        inset 0 1px rgba(255,255,255,0.3), /* Top light Line */
+        inset 0 10px rgba(255,255,255,0.2), /* Top Light Shadow */
+        inset 0 10px 20px rgba(255,255,255,0.25), /* Sides Light Shadow */
+        inset 0 -15px 30px rgba(0,0,0,0.3); /* Dark Background */	
+}
+
+.small {
+	
+	font-size:3rem;	
+}
+
+#only-pic1 {
+		
+}
+
+.small >img {
+	margin-top:3px;
+	width:95%;
+}
+
