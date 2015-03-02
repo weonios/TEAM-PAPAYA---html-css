@@ -55,6 +55,8 @@ header a{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
+
 }
 
 #leftAside{
@@ -62,7 +64,7 @@ header a{
     height: 700px;
     background-color: lightblue;
     border: 1px solid yellow;
-    float: left;
+
     margin-top: 50px;
     margin-left: 10px;
     border-radius: 10px;
@@ -97,11 +99,11 @@ header a{
 
 
 #white-list-sheet{
-    width: 900px;
+    width: 850px;
     height: 680px;
     padding: 10px;
     margin: 50px auto;
-    box-shadow: 20px 20px 10px black;
+   box-shadow: 20px 20px 10px black;
     background-color: rgba(255, 255, 255, 0.9);
 }
 
@@ -126,7 +128,7 @@ header a{
 #video{
     width: 100%;
     height: 200px;
-
+    margin: 0 auto;
 
 }
 #homer{
@@ -137,7 +139,7 @@ header a{
 
 #rightAside{
     box-sizing: border-box;
-    border: 1px solid #000000;
+    margin-right: 10px;
     margin-top: 50px;
     height: 700px;
     width: 200px;
@@ -175,3 +177,4 @@ header a{
     font-size: 12px;
     font-weight: bold;
 }
+
