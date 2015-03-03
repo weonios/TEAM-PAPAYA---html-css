@@ -22,7 +22,7 @@ body{
 
 #white-list-sheet{
     width: 900px;
-    height: 700px;
+    height: 100%;
     /*background-color: white;*/
     margin: 50px auto;
     box-shadow: 20px 20px 10px black;
@@ -251,7 +251,7 @@ iframe{
     background-color: #E9EDF0;
     margin-left: 30px;
 }
-
+-------------------------------------------------------------------------------------------
 #bell::before {
     content: "1001";
     color: #FEA71E;
@@ -262,4 +262,13 @@ iframe{
 
 #bell>img {
     margin-bottom: -10px;
+}
+
+#white-list-sheet {
+    color: black;
+    font-family: "Comic Sans MS",Tahoma;
+}
+
+.info {
+    display: inline-block;
 }
