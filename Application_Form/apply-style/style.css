@@ -269,6 +269,44 @@ iframe{
     font-family: "Comic Sans MS",Tahoma;
 }
 
+#white-list-sheet h2 {
+    background-color: orange;
+    text-align: center;
+}
+
+#white-list-sheet h1 {
+    background-color: #234465;
+    text-align: center;
+    font-size: 2em;
+    padding: 5px;
+}
+
 .info {
     display: inline-block;
+    margin: 1% 0 1% 15%;
+
+}
+
+#necessary-abilities {
+    text-align: center;
+}
+
+#apply-button {
+    text-align: center;
+}
+
+#apply-button > button {
+    font-size: 1.5em;
+    padding: 5px;
+    border: 1px solid orange;
+    border-radius: 5px;
+    background-color: rgba(255, 102, 0, 0.2);
+}
+
+#apply-button > button:hover {
+    background-color: orange;
+}
+
+select,input {
+    border-radius: 5px; 
 }
