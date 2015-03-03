@@ -40,9 +40,10 @@ header h1{
 }
 
 header nav{
-    float: left;
-    vertical-align: bottom;
-    padding-top: 95px;
+
+   display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 header a{
@@ -72,8 +73,8 @@ header a{
 }
 #headerAside{
     background-color: yellow;
-    display: flex;
-    flex-direction: row;
+    /* display: flex;
+     flex-direction: row;*/
     color: #000000;
     border-radius: 10px;
 
@@ -109,7 +110,7 @@ header a{
 
 #header-white-list-sheet{
     text-align: center;
-    font-size: 60px;
+    font-size: 3em;
     font-weight: bold;
 }
 #header-white-list-sheet > a > img{
@@ -177,4 +178,91 @@ header a{
     font-size: 12px;
     font-weight: bold;
 }
+#trailer{
+    display: none;
+}
 
+
+
+@media all and (max-width: 1283px) {
+   #mainData{
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+   }
+    #white-list-sheet {
+        width: 600px;
+        overflow:scroll;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #header-white-list-sheet{
+        text-align: left;
+        width: 100%;
+        font-size: 2.5em;
+    }
+    #video{
+        display: none;
+    }
+    #trailer{
+        display: inline;
+    }
+
+}
+
+
+
+@media all and (max-width: 1033px) {
+
+    #mainData{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #white-list-sheet {
+        width: 450px;
+        overflow:scroll;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #header-white-list-sheet{
+        text-align: left;
+        font-size: 2em;
+        width: 100%;
+    }
+    #video{
+        display: none;
+    }
+    #trailer{
+        display: inline-flex;
+    }
+}
+
+@media all and (max-width: 883px) {
+
+    #mainData{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #white-list-sheet{
+        margin-left: 0;
+        margin-right: 0;
+        overflow:scroll;
+        width: 250px;
+    }
+    #header-white-list-sheet {
+        text-align: left;
+        width: 100%;
+        font-size: 0.7em;
+    }
+    #video{
+        display: none;
+    }
+    #trailer{
+        display: inline-flex;
+    }
+
+}
