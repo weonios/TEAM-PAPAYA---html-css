@@ -310,3 +310,9 @@ iframe{
 select,input {
     border-radius: 5px; 
 }
+
+@media only screen and (max-width: 900px) {
+    #white-list-sheet {
+        width: 100%;
+    }
+}
