@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<title>Main</title>
-		<link href="Style/Styles-03.css" type="text/css" rel="stylesheet">
+		<link href="Style/Styles_Tea.css" type="text/css" rel="stylesheet">
 		<meta charset="utf-8"/>
 	</head>
 
@@ -24,7 +24,8 @@
      while (n) 
 {
 Console.WriteLine("Чакаме,
-псуваме, чакаме псуваме");
+псуваме, чакаме, псуваме");
+	  n++;
 }
    }
 }</pre>
@@ -45,7 +46,7 @@ Console.WriteLine("Чакаме,
 						
 						<article>
 							<h3>...по време на лекция по Databases</h3>
-							<p>"..по английските стандарти. Защото там един курс е 30 часа, смях! На мен 30 часа са ми едно'<em>Добър ден!'</em>'"</p>
+							<p>"..по английските стандарти. Защото там един курс е 30 часа, смях! На мен 30 часа са ми едно '<em>Добър ден!</em>'"</p>
 							<footer>С. Наков</footer>
 						</article>				
 						
@@ -67,13 +68,13 @@ Console.WriteLine("Чакаме,
 						
 						<article>
 							<h3>...из лекция по Java Basics</h3>
-							<p>"Много е трудно да направиш толкова интелигентен компилатора, че да се сеща колко тъп си ти, и какво точно си сбъркал!"</p>
+							<p>"Много е трудно да направиш толкова интелигентен компилатора, че да се сеща колко тъп си ти; и какво точно си сбъркал!"</p>
 							<footer>С. Наков</footer>
 						</article>
 						
 						<article>
 							<h3>...из обяснения за Data Types - int</h3>
-							<p>".. няя как в едно чекмедже да съберем безкраен брой чорапи, нали.. просто не стаа. ИМА ЛИМИТ."</p>
+							<p>".. няя как в едно чекмедже да съберем безкраен брой чорапи, нали.. просто не стаа. ИМА <strong>ЛИМИТ</strong>."</p>
 							<footer>С. Наков</footer>
 						</article>							
 					</section>					
@@ -84,7 +85,7 @@ Console.WriteLine("Чакаме,
 			</aside>
 			
 			<main id="field">
-				<button onclick="doYourThing(0)" id="butt0">				
+				<button onclick="rotateButtons(0)" id="butt0">				
 					<div id="only-pic0" class="small">
 						<img src="img/Nakov-2.jpg"/>
 						<span>Светлин Наков</span>						
@@ -108,7 +109,7 @@ Console.WriteLine("Чакаме,
 					</div>				
 				</button>
 				
-				<button onclick="doYourThing(1)" id="butt1">
+				<button onclick="rotateButtons(1)" id="butt1">
 					<div id="only-pic1" class="small">
 						<img src="img/Peshev_01.jpg"/>
 						<span>Марио Пешев</span>
@@ -127,7 +128,7 @@ Console.WriteLine("Чакаме,
 					</div>
 				</button>
 				
-				<button onclick="doYourThing(2)" id="butt2">
+				<button onclick="rotateButtons(2)" id="butt2">
 					<div id="only-pic2" class="small">
 						<img src="img/Vankov.jpg"/>
 						<span>Иван Ванков</span>
@@ -146,7 +147,7 @@ Console.WriteLine("Чакаме,
 					</div>
 				</button>
 				
-				<button onclick="doYourThing(3)" id="butt3">
+				<button onclick="rotateButtons(3)" id="butt3">
 					<div id="only-pic3" class="small">
 						<img src="img/Marinov.jpg"/>
 						<span>Мариян Маринов</span>
@@ -160,7 +161,7 @@ Console.WriteLine("Чакаме,
 					</div>
 					<div id="full-content3" class="big">
 						<img src="img/Marinov1.jpg"/>					
-						<p><span>Мариян Маринов:</span>занимава се със системна администрация от 1998 г. насам. В момента е Управител и главен архитект на <span>1H Ltd.: http://www.1h.com</span>. Там прави софтуер за web hosting фирми, използвайки най-новите технологии в <span>Linux</span>, като от време на време, де факто създава някои от тези нови технологии. В свободното си време помага за организирането на <span>OpenFest<span>, <span>BG Perl Workshops</span>, <span>YAPC::Europe</span>, <span>FOSDEM </span>и други конференции насочени към софтуерът с отворен код. Той е редовен лектор на подобни конференции в цял свят. Когато не е по конференции, обича да споделя своите знания, като прави курсове по <span>Linux System Administration</span> и <span>Network Security</span> във Факултета по Математика и Информатика към Софийски Университет.</p>
+						<p><span>Мариян Маринов:</span>занимава се със системна администрация от 1998 г. насам. В момента е Управител и главен архитект на <span>1H Ltd.: http://www.1h.com</span>. Там прави софтуер за web hosting фирми, използвайки най-новите технологии в <span>Linux</span>, като от време на време, де факто създава някои от тези нови технологии. В свободното си време помага за организирането на <span>OpenFest</span>, <span>BG Perl Workshops</span>, <span>YAPC::Europe</span>, <span>FOSDEM </span>и други конференции насочени към софтуерът с отворен код. Той е редовен лектор на подобни конференции в цял свят. Когато не е по конференции, обича да споделя своите знания, като прави курсове по <span>Linux System Administration</span> и <span>Network Security</span> във Факултета по Математика и Информатика към Софийски Университет.</p>
 						<p class="move-on-hover"><span>Кликни за повече информация.</span></p>
 					</div>
 				</button>			
@@ -182,7 +183,7 @@ Console.WriteLine("Чакаме,
 						</article>
 						
 						<article class="sentension">							
-							<p>"И сега търсим клавиш Any Key, но аз го нямам, почваме да търсиме... намираме Esc,Tab..</p>
+							<p>"И сега търсим клавиш Any Key, но аз го нямам, почваме да търсиме... намираме Esc,Tab.."</p>
 							<footer>С. Наков</footer>
 						</article>
 						
@@ -191,13 +192,20 @@ Console.WriteLine("Чакаме,
 							<p>"Един колега заряза приятелката си защото нямаше време да пише код и цяла година кара на ръчна" </p>
 							<footer>С. Наков</footer>
 						</article>	
+						
+						<article class="sentension">							
+							<p>"...Да, обаче reverse не е от тип string, а от някво @#$*@..."</p>
+							<footer>С. Наков</footer>
+						</article>
 					
 					</section>
 					
 					<section class="siders-section" id="right2">
+							<header>бисери</header>
+							<hr />
 							<article class="sentension">							
 							<p><span>Наков чете числото 1000000 в двоична бройна система като "1 милион". Поправя се..:</span><br /> "Това
-всъщност трябва да се чете като едно и шест нули, не като един милион. Това е все едно да четете числото 100 като - едно кенеф".</p>
+всъщност трябва да се чете като едно и шест нули, не като един милион. Все едно да четете числото 100 като: едно - кенеф".</p>
 							<footer>С. Наков</footer>
 						</article>
 					</section>
@@ -211,15 +219,19 @@ Console.WriteLine("Чакаме,
 		</div>
 				
 		<script>
-			var x1=460; y1=220;
-			var x2=70; y2=360;
-			var x3=0; y3=130;			
-			var x4=345; y4=100;
+			var x1=470; y1=220;
+			var x2=80; y2=360;
+			var x3=10; y3=130;			
+			var x4=355; y4=100;
 			var speed=2;
 			var sheight="150px"; mheight="300px"; bheight="480px";
 			var swidth="250px"; mwidth="300px"; bwidth="370px";
 			
 			var coordinateHolder = [[x1,y1], [x2,y2], [x3,y3], [x4,y4]];
+			var xnPropertyHolder = [["4","0 15px 15px rgba(0,0,0,0.9)"], ["3","-10px 14px 10px rgba(0,0,0,0.6)"],
+									["1","-5px -5px 5px rgba(0,0,0,0.4)"],["2","-10px -7px 10px rgba(0,0,0,0.6)"]];
+			var initialCoordinates = [[x1,y1], [x2,y2], [x3,y3], [x4,y4]];
+			var dimensionHolder = [[bheight,bwidth,"full-content"], [mheight,mwidth,"middle-size"], [sheight,swidth,"only-pic"], [mheight,mwidth,"middle-size"]]
 			
 			function moveSiders(){
 				document.getElementById("left-sider").style.width="200px";
@@ -254,18 +266,18 @@ Console.WriteLine("Чакаме,
 	
 			function moveOnUpperCurve(xA, xB, interval, el){
 				xA+=interval;
-				var y = Math.sqrt(Math.pow(234.64,2)-Math.pow((227.25-xA),2))+186.28;
+				var y = Math.sqrt(Math.pow(234.64,2)-Math.pow((237.25-xA),2))+186.28;
 				var yA = parseInt(y);								
 				el.style.left=xA.toString()+"px";;
 				el.style.top=yA.toString()+"px";
 				if (interval>0)
 				{if (xA <= xB) setTimeout('moveOnUpperCurve()',50);}
 				else if (xA >= xB) setTimeout('moveOnUpperCurve()',50);
-			}	
-
+			}			
+			
 			function moveOnLowerCurve(xA, xB, interval, el){
 				xA+=interval;
-				var y = Math.sqrt(Math.pow(300.77,2)-Math.pow((193.8-xA),2))+360;
+				var y = Math.sqrt(Math.pow(300.77,2)-Math.pow((203.8-xA),2))+360;
 				var yA = parseInt(y);								
 				el.style.left=xA.toString()+"px";;
 				el.style.top=yA.toString()+"px";
@@ -274,11 +286,14 @@ Console.WriteLine("Чакаме,
 				else if (xA >= xB) setTimeout('moveOnLowerCurve()',50);			
 			}
 			
-			function setDimensionsAndPosition(x, y, h, w, el){
-				el.style.left=x+"px";
-				el.style.top=y+"px";	
-				el.style.height=h;	
-				el.style.width=w;
+			function setDimensionsAndPosition(pos, el, num){
+				el.style.left=initialCoordinates[pos][0]+"px";
+				el.style.top=initialCoordinates[pos][1]+"px";	
+				el.style.height=dimensionHolder[pos][0];	
+				el.style.width=dimensionHolder[pos][1];
+				el.style.zIndex=xnPropertyHolder[pos][0];
+				el.style.boxShadow=xnPropertyHolder[pos][1];
+				document.getElementById(dimensionHolder[pos][2]+num.toString()).style.display="initial";
 			}
 			
 			function callPage(num){
@@ -290,7 +305,7 @@ Console.WriteLine("Чакаме,
 				}
 			}
 			
-			function doYourThing(Num) {	
+			function rotateButtons(Num) {	
 				var oneMoreTurn=false;
 				if(coordinateHolder[Num][0]!=x3){
 					oneMoreTurn=true;
@@ -300,7 +315,10 @@ Console.WriteLine("Чакаме,
 					callPage(Num);
 				}
 				
+				var numHolder=Num;
+				
 				do {
+					Num=numHolder;
 					if(coordinateHolder[Num][0]!=x1){
 						for(i=0;i<4;i++){
 							document.getElementById("full-content"+i.toString()).style.display="none";
@@ -310,128 +328,53 @@ Console.WriteLine("Чакаме,
 					} 				
 					
 					if(coordinateHolder[Num][0]==x2){
+						var spotNum=1;	
 						for(count=0;count<4; count++){
-							if(Num==4)Num=0;							
-							var element=document.getElementById("butt"+Num.toString());
-							switch(count){
-								case 0: {					
-									moveOnUpperCurve(x2, x1, speed, element);									
-									setDimensionsAndPosition(x1, y1, bheight, bwidth, element);
-									element.style.zIndex ="4";
-									document.getElementById("full-content"+Num.toString()).style.display="initial";
-									coordinateHolder[Num]=[x1,y1];
-								} break;
-								
-								case 1: {	
-									moveOnUpperCurve(x3, x2, speed, element);									
-									setDimensionsAndPosition(x2, y2, mheight, mwidth, element);
-									element.style.zIndex ="3";
-									document.getElementById("middle-size"+Num.toString()).style.display="initial";		coordinateHolder[Num]=[x2,y2];
-								} break;
-								
-								case 2: {								
-									moveOnLowerCurve(x4, x3, -speed, element);								
-									setDimensionsAndPosition(x3, y3, sheight, swidth, element);
-									coordinateHolder[Num]=[x3,y3];	
-									element.style.zIndex ="0";
-									document.getElementById("only-pic"+Num.toString()).style.display="initial";						
-								} break;
-								
-								case 3: {							
-									moveOnLowerCurve(x1, x4, -speed, element);									
-									setDimensionsAndPosition(x4, y4, mheight, mwidth, element);
-									document.getElementById("middle-size"+Num.toString()).style.display="initial";	element.style.zIndex ="1";				
-									coordinateHolder[Num]=[x4,y4];
-								} break;								
-							}						
-							Num++;
-						}					
-					} 
+							if(Num==-1) Num=3;
+							if(spotNum==-1) spotNum=3;
+							var next = spotNum-1;
+							if(next==-1)next=3;
+							var element=document.getElementById("butt"+Num.toString());																
+							setDimensionsAndPosition(next, element, Num);										
+							coordinateHolder[Num]=initialCoordinates[next];	
+							Num--;
+							spotNum--;
+						}			
+					}						
 					
 					if(coordinateHolder[Num][0]==x4){
+						var spotNum=3;	
 						for(count=0;count<4; count++){
-							if(Num==4)Num=0;							
-							var element=document.getElementById("butt"+Num.toString());
-							switch(count){
-								case 0: {
-									moveOnLowerCurve(x4, x1, speed, element);
-									setDimensionsAndPosition(x1, y1, bheight, bwidth, element);							
-									element.style.zIndex ="3";									
-									document.getElementById("full-content"+Num.toString()).style.display="initial";
-									coordinateHolder[Num]=[x1,y1];
-								} break;
-								
-								case 1: {
-									moveOnUpperCurve(x1, x2, -speed, element);
-									setDimensionsAndPosition(x2, y2, mheight, mwidth, element);							
-									document.getElementById("middle-size"+Num.toString()).style.display="initial";
-									element.style.zIndex ="2";
-									coordinateHolder[Num]=[x2,y2];
-								} break;
-								
-								case 2: {
-									moveOnUpperCurve(x2, x3, -speed, element);									
-									setDimensionsAndPosition(x3, y3, sheight, swidth, element);
-									element.style.zIndex ="0";
-									document.getElementById("only-pic"+Num.toString()).style.display="initial";
-									coordinateHolder[Num]=[x3,y3];
-								} break;
-								
-								case 3: {								
-									moveOnLowerCurve(x3, x4, speed, element);									
-									setDimensionsAndPosition(x4, y4, mheight, mwidth, element);
-									document.getElementById("middle-size"+Num.toString()).style.display="initial";
-									element.style.zIndex ="1";
-									coordinateHolder[Num]=[x4,y4];
-								} break;								
-							}						
+							if(Num==4)Num=0;
+							if(spotNum==4)spotNum=0;
+							var next = spotNum+1;
+							if(next==4)next=0;
+							var element=document.getElementById("butt"+Num.toString());															
+							setDimensionsAndPosition(next, element, Num);										
+							coordinateHolder[Num]=initialCoordinates[next];	
 							Num++;
-						}					
-					} 
+							spotNum++;
+						}			
+					}			 
 					
-							
-				if(coordinateHolder[Num][0]==x3){
-					for(count=0;count<4; count++){
-						if(Num==4)Num=0;						
-						var element=document.getElementById("butt"+Num.toString());	
-						switch(count){
-								case 0: {								
-									moveOnLowerCurve(x3, x4, speed, element);									
-									setDimensionsAndPosition(x4, y4, mheight, mwidth, element);
-									element.style.zIndex ="1";
-									document.getElementById("only-pic"+Num.toString()).style.display="initial";
-									coordinateHolder[Num]=[x4,y4];
-								} break;
-								
-								
-								case 1: {
-									moveOnLowerCurve(x4, x1, speed, element);									
-									setDimensionsAndPosition(x1, y1, bheight, bwidth, element);
-									coordinateHolder[Num]=[x1,y1];								
-									element.style.zIndex ="3";
-									document.getElementById("full-content"+Num.toString()).style.display="initial";
-								} break;
-								
-								case 2: {						
-									moveOnUpperCurve(x1, x2, -speed, element);								
-									setDimensionsAndPosition(x2, y2, mheight,mwidth, element);
-									document.getElementById("middle-size"+Num.toString()).style.display="initial";		element.style.zIndex ="2";					
-									coordinateHolder[Num]=[x2,y2];
-								} break;
-								
-								case 3: {								
-									moveOnUpperCurve(x2, x3, -speed, element);
-									setDimensionsAndPosition(x3, y3, sheight,swidth, element);						document.getElementById("only-pic"+Num.toString()).style.display="initial";
-									coordinateHolder[Num]=[x3,y3];
-									element.style.zIndex ="0";
-								} break;											
-						}	
+					if(coordinateHolder[Num][0]==x3){
+						var spotNum=2;	
+						for(count=0;count<4; count++){
+							if(Num==4)Num=0;
+							if(spotNum==4)spotNum=0;
+							var next = spotNum+1;
+							if(next==4)next=0;
+							var element=document.getElementById("butt"+Num.toString());															
+							setDimensionsAndPosition(next, element, Num);										
+							coordinateHolder[Num]=initialCoordinates[next];	
 							Num++;
-					}
-				}	
-				oneMoreTurn=!oneMoreTurn;			
-			} while(oneMoreTurn);
-		}
+							spotNum++;
+						}			
+					}		
+					
+					oneMoreTurn=!oneMoreTurn;			
+				} while(oneMoreTurn);
+			}
 		</script>
 	</body>
 </html>

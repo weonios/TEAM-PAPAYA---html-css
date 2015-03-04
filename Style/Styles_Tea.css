@@ -28,7 +28,7 @@ button {
 	margin-left:0;	
 	background: rgba(35,90,255,0.6);
 	overflow:hidden;
-	display:table-cell;
+	display:table-cell;	
 	
     -o-box-shadow: 
         0 2px 8px rgba(0,0,0,0.5),
@@ -67,7 +67,7 @@ button {
 
 button:hover {
 	box-shadow:none;
-	cursor:pointer;	
+	cursor:pointer;		
 }
 
 button:hover .move-on-hover {
@@ -82,41 +82,46 @@ button .move-on-hover:not(#ajusted){
 	margin-top:20px;
 }
 
+
 div#only-pic {
 	width:100px;
-	height:50px;		
+	height:50px;	
 }
 
 #butt0 {
 	top:220px;
-	left:460px;
+	left:470px;
 	width:370px;
 	height:480px;
 	z-index:4;
+	box-shadow: 0 15px 15px rgba(0,0,0,0.9);
 }
 
 #butt1 {
 	top:360px;
-	left:70px;
+	left:80px;
 	width:300px;
 	height:300px;
-	z-index:3;	
+	z-index:2;	
+	box-shadow: -10px 14px 10px rgba(0,0,0,0.6);
 }
 
 #butt2 {
 	top:130px;
-	left:0px;
+	left:10px;
 	width:250px;
 	height:150px;
-	z-index:4;
+	z-index:3;
+	box-shadow: -5px -5px 5px rgba(0,0,0,0.4);
 }
 
 #butt3 {
 	top:100px;
-	left:345px;
+	left:355px;
 	width:300px;
 	height:300px;
-	z-index:2;
+	z-index:1;
+	box-shadow: -10px -7px 10px rgba(0,0,0,0.6);
 }
 
 #butt0>#only-pic0, #butt0>#full-content0, #butt0>#middle-size0, #butt1>#only-pic1, #butt1>#middle-size1,  #butt1>#full-content1, #butt2>#middle-size2,  #butt2>#full-content2, #butt2>#only-pic2,  #butt3>#only-pic3, #butt3>#middle-size3,  #butt3>#full-content3 {
@@ -131,7 +136,7 @@ div#only-pic {
 	overflow:auto;	
 	padding:15px;
 	display:flex;
-	flex-flow: row nowrap;
+	flex-flow: row wrap;
 	justify-content: space-between;	
 }
 
@@ -139,7 +144,9 @@ div#only-pic {
 	width:200px;
 	background-color:white;
 	opacity:0.9;
-	border:2px solid lightgray;		
+	border:2px solid lightgray;
+	min-width:200px;	
+	overflow:hidden;
 }
 
 #field {	
@@ -172,19 +179,20 @@ div#only-pic {
 	color:black;
 	font-family:"Comic Sans MS",Tahoma;
 	text-shadow:2px 2px 3px gray;
+	word-break: break-all;
 	font-size:0.9rem;
 }
 
 #side-container>section {
-	display:block !important;	
-	width:200x;
+	display:block;	
+	width:100%;
 	height:750px;
 	transition:all 2s ease;	
-	padding:15px;
+	padding:15px;	
 }
 
 #side-container>section >article {
-	display:block;
+	display:block;	
 }
 
 .siders > input[type="button"]{
@@ -203,7 +211,8 @@ div#only-pic {
 	background: #3B5997;
 	cursor:pointer;
 	opacity:0.4;
-	transition:all 1s ease;
+	transition:all 1s ease;	
+	
 }
 
 #right1, #right2{	
@@ -229,7 +238,7 @@ div#only-pic {
 	line-height:0.9rem;
 	word-spacing:0.9px;
 	letter-spacing:0.9px;
-	margin-bottom:30px;		
+	margin-bottom:37px;		
 }
 
 .siders-section>header{
@@ -273,8 +282,7 @@ div#only-pic {
 }
 
 .sentension >p >span {
-	color:#3B5997;
-	margin-bottom:5px;
+	color:#3B5997;	
 	display:block;
 }
 
