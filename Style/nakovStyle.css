@@ -1,12 +1,65 @@
 *{
     margin: 0;
     padding: 0;
+    font-family:"Comic Sans MS",Tahoma;
 }
 
 #wrapper{
     background-image: url("../Image/despicable_me_minions-wide.jpg");
     background-repeat: no-repeat;
 }
+
+main {
+    text-align: center;
+}
+
+#form>div {
+    margin: 2%;
+}
+
+#adress {
+    background-color: rgba(25, 25, 200, 0.5);
+    width: 66%;
+    margin: 0 auto;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+#bottom {
+    padding: 3%;
+    padding-top: 0%;
+}
+
+#white-list-sheet{
+    width: 900px;
+    height: 100%;
+    margin: 50px auto;
+    box-shadow: 20px 20px 10px black;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+@media only screen and (max-width: 900px) {
+    #white-list-sheet {
+        width: 100%;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+@media only screen (max-width:940px){
+    button {
+        zoom:2;
+    }
+}
+
+
+
+
 
 header {
     width:100%;
@@ -15,24 +68,24 @@ header {
     text-shadow: 0 1px #000;
     font-weight:bold;
     font-size:1rem;
-    padding:20px 0 10px 0;
-    overflow:auto;
-	font-family:"Comic Sans MS",Tahoma;
+    padding:20px 0 10px 0;  
+    overflow:auto;  
+    font-family:"Comic Sans MS",Tahoma;
 }
 
-header > div {
+header > div {  
     overflow:auto;
     float:left;
     display:inline-block;
     padding-left:3%;
     vertical-align:baseline;
     margin-top:-7px;
-    display:table-cell;
+    display:table-cell; 
     margin:auto 0;
     position:relative;
     top:5px;
     overflow:hidden;
-    transition: all 0.3s cubic-bezier(0,0,1,1) 0s;
+    transition: all 0.3s cubic-bezier(0,0,1,1) 0s;  
 }
 
 header >div > button {
@@ -49,12 +102,13 @@ header >div > button {
     margin:10px auto 10px auto;
     box-shadow: 3px 3px 2px lightgray;
     transition: all 0.3s cubic-bezier(0,0,1,1) 0s;
+    font-family:"Comic Sans MS",Tahoma;
 }
 
 header >div > button:hover{
     background-color:#4CA0DB;
     box-shadow: -3px -3px 2px lightgray;
-    cursor:pointer;
+    cursor:pointer; 
     position:relative;
     left:2px;
     top:2px;
@@ -63,63 +117,63 @@ header >div > button:hover{
 
 header > section {
     float:right;
-    display:inline-block;
+    display:inline-block;   
     padding-right:3%;
 }
 
-header > section > div > ul >li{
-    float:right;
-    display:table-cell;
+header > section > div > ul >li{    
+    float:right;        
+    display:table-cell; 
 }
 
-header > section > div > ul >li:first-child{
+header > section > div > ul >li:first-child{            
     margin-top:52px;
 }
 
-#notifications {
+header #notifications {
     color:#F8D75A;
-    font-size:1.4rem;
-    position:relative;
+    font-size:1.4rem;   
+    position:relative;  
     top:-3px;
     margin-right:25px;
 }
 
-#notifications:before {
-    content:url('../img/nakovImages/asd.jpg');
+header #notifications:before {
+    content:url('../img/asd.jpg');
     vertical-align:sub;
     margin-right:7px;
     position:relative;
     top:2px;
 }
 
-section>div>ul>li:nth-child(2){
+header section>div>ul>li:nth-child(2){
     padding-right:10px;
-    margin-top:65px;
+    margin-top:65px;    
 }
 
-#notifications:hover{
-    color:#F8D75A;
+header #notifications:hover{
+    color:#F8D75A;  
     text-decoration:underline;
     color:white;
 }
 
-#searchButton {
+header #searchButton {
     width:35px;
-    height:35px;
+    height:35px;    
     padding:0;
     border:none;
     border-left:1px solid lightgray;
-    border-top-right-radius:3px;
-    border-bottom-right-radius:3px;
-    background-image:url("../img/nakovImages/Minion-Amazed-icon.png");
+    border-right-radius:3px;
+    background-image:url("../img/Minion-Amazed-icon.png");
     background-repeat:no-repeat;
     background-position:0;
     background-color:white;
+    margin-left: -5px;
 }
 
-#search {
+header #search {    
     height:35px;
-    text-indent:8px;
+    text-indent:8px;    
     vertical-align:top;
     color:lightgray;
     font-size:0.8rem;
@@ -129,51 +183,51 @@ section>div>ul>li:nth-child(2){
     border-bottom-left-radius:3px;
 }
 
-nav{
-    clear:both;
-    padding-top:5px;
+header nav{
+    clear:both; 
+    padding-top:5px;        
 }
 
-nav >ul {
+header nav >ul {
     display:flex;
     flex-wrap:wrap;
     justify-content: center;
     align-content:center;
 }
 
-ul {
+header ul {
     display:inline;
 }
 
-ul li {
+header ul li {  
     color:white;
     list-style:none;
     display:inline-block;
-    transition: all 0.2s;
+    transition: all 0.2s;   
 }
 
-a {
+header a {
     text-decoration:none;
     color:white;
 }
 
-nav > ul > li {
+header nav > ul > li {
     margin-right:15px;
-    padding:3px 7px;
+    padding:3px 7px;    
 }
 
-nav > ul > li:last-child {
-    margin-right:0;
+header nav > ul > li:last-child {
+    margin-right:0; 
 }
 
-nav > ul > li:hover {
+header nav > ul > li:hover {
     background-color:#4CA0DB;
     border-radius:5px;
 }
 
-#drop-down {
-    position:absolute;
-    background:#3b5997;
+header #drop-down {
+    position:absolute;  
+    background:#3b5997; 
     z-index:5;
     display: none;
     opacity:0;
@@ -184,35 +238,36 @@ nav > ul > li:hover {
     margin-left:-7px;
 }
 
-#drop-down  li{
+header #drop-down  li{  
     background:#3b5997;
     float:none;
     display:block;
+    transition:NONE;
 }
 
-li.has-menu{
-
+header #drop-down  li:HOVER {
+    BACKGROUND-COLOR:#F7DA33;
 }
 
-li.has-menu:hover ul{
+header li.has-menu:hover ul{
     display:block !important;
     visibility:visible !important;
     opacity:1 !important;
 }
 
-li.has-menu:hover ul>li{
+header li.has-menu:hover ul>li{ 
     display:block !important;
     visibility:visible !important;
     opacity:1 !important;
 }
-section > div #drop-down li{
+header section > div #drop-down li{
     background-color:white;
     width:300px;
     padding:10px ;
-    color:#234465;
+    color:#234465;  
 }
 
-section > div #drop-down li:first-of-type ~ li  a{
+header section > div #drop-down li:first-of-type ~ li  a{
     color: #234465;
     font-weight:normal;
     text-shadow:none;
@@ -221,30 +276,32 @@ section > div #drop-down li:first-of-type ~ li  a{
     height:3px;
 }
 
-section > div #drop-down li:first-of-type {
+header section > div #drop-down li:first-of-type {
     background-color:#3b5997;
-    color:white;
+    color:white;    
 }
 
-section > div #drop-down span{
+header section > div #drop-down span{
     font-weight:bold;
 }
 
-section > div input[type="submit"] {
+header section > div input[type="submit"] { 
     padding:5px;
     margin:5px 0 5px 120px;
-    background-color:#fea71e;
+    background-color:#fea71e;   
     border:none;
     border-radius:3px;
     border:none;
     color:white;
+    font-family:"Comic Sans MS",Tahoma;
 }
 
-section > div input[type="submit"]{
+header section > div input[type="submit"]{
     cursor:pointer;
+    font-family:"Comic Sans MS",Tahoma;
 }
 
-section > nav  #drop-down li {
+header section > nav  #drop-down li {
     width:400px;
     padding-left:20px;
     border-top:1px solid #F8D75A;
@@ -252,358 +309,13 @@ section > nav  #drop-down li {
     line-height:1.8rem;
 }
 
-.custom-dropdown-header {
+header .custom-dropdown-header {
     font-weight:bold;
     color:#4CA0DB;
     font-size:1.1em;
-}
+} 
 
-#main{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    word-wrap: break-word;
-	font-family:"Comic Sans MS",Tahoma;
-	font-size:0.8rem;
-	margin-bottom:20px;
-}
-
-#leftAside{
-    width: 190px;
-    height: 800px;
-    background-color: lightblue;
-    border: 1px solid yellow;
-    float: left;
-    margin-top: 50px;
-    border-top-left-radius: 10px;
-    overflow: scroll;
-    margin-left: 10px;
-    box-sizing: border-box;
-}
-#headerAside{
-    background-color: yellow;
-    text-align: center;
-    color: #000000;
-    border-top-left-radius: 10px;
-
-}
-
-#headerAside > img{
-    width: 100%;
-    height: 100px;
-}
-#headerAside > img:hover{
-    width: 200px;
-    height: 200px;
-    transition: all 1s;
-}
-.nakovName{
-    color: cornflowerblue;
-    margin-top: 20px;
-}
-
-
-#white-list-sheet{
-    width: 800px;
-    height: 800px;
-    padding: 10px;
-    margin-top: 50px;
-    box-sizing: border-box;
-    background-color: rgba(255, 255, 255, 0.9);
-    float: left;	
-}
-
-#header-white-list-sheet{
-    text-align: center;
-    font-size: 3em;
-    font-weight: bold;
-}
-#header-white-list-sheet > a > img{
-
-    width: 150px;
-    height: 120px;
-}
-
-.white-list-layout{
-    font-size: 20px;
-}
-#purchase{
-    color: cadetblue;
-}
-#movieName{
-    text-decoration: none;
-    color: #000000;
-    font-weight: bold;
-    font-size: 20px;
-}
-#video{
-    width: 100%;
-    height: 200px;
-    margin: 0 auto;
-
-}
-#homer{
-    width: 100px;
-    height: 100px;
-    float: right;
-}
-
-#rightAside{
-    box-sizing: border-box;
-    width: 190px;
-    height: 800px;
-	z-index:5;
-    box-sizing: border-box;
-    margin-top: 50px;
-    background-color: lightblue;
-    border-top-right-radius: 10px;
-
-}
-#rightAside > header{
-    padding: 0;
-    margin: 0;
-    color: #000000;
-    font-size: 22px;
-    font-weight: bold;
-    background-color: yellow;
-    height: 60px;
-    margin-bottom: 20px;
-    border-top-right-radius: 10px;
-    text-align: center;
-}
-#rightAside > ul{
-    list-style-type: none;
-}
-#rightAside > ul > li{
-    margin-bottom: 20px;
-}
-
-#rightAside > ul > li > img{
-    height: 74px;
-    width: 198px;
-}
-#rightAside > ul > li > img:hover{
-    margin-left: -200px;
-    height: 300px;
-    width: 300px;
-    transition: all 1s;
-}
-.infoPics{
-    font-size: 12px;
-    font-weight: bold;
-}
-#trailer{
-    display: none;
-}
-
-
-
- footer{
-    font-family: Tahoma, sans-serif;
-    color: white;
-    font-size: 0.9em;
-}
-
-footer{
-    background-color: #234465;
-    width: 100%;
-    padding-top: 3%;
-    padding-left: 6%;
-    padding-bottom: 1%;
-}
-
-footer ul{
-    list-style-type: none;
-}
-
-footer a{
-    text-decoration: none;
-    color: white;
-}
-
-footer section{
-    display: inline-block;
-    vertical-align: top;
-    width: 17%;
-    padding-top: 1.5%;
-}
-
-footer section div{
-    padding-bottom: 10%;
-    width: 130px;
-    text-align: center;
-    padding-top: 7%;
-    border: 1px solid #000000;
-    margin-bottom: 5%;
-}
-#first-botton:hover,#second-botton:hover{
-    background-color: rgb(254,167,30);
-
-}
-
-/*Media za meina*/
-@media all and (max-width: 1283px) {
-
-    #white-list-sheet {
-        width: 600px;
-        overflow:scroll;
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    #header-white-list-sheet{
-        text-align: left;
-        width: 100%;
-        font-size: 2.5em;
-    }
-    #video{
-        display: none;
-    }
-    #trailer{
-        display: inline;
-        color: #000000;
-    }
-
-}
-
-
-
-@media all and (max-width: 1033px) {
-
-    #mainData{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    #white-list-sheet {
-        width: 450px;
-        overflow:scroll;
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    #header-white-list-sheet{
-        text-align: center;
-        font-size: 2em;
-        width: 100%;
-    }
-    #header-white-list-sheet > a > img{
-
-        display: none;
-    }
-    #video{
-        display: none;
-    }
-    #trailer{
-        display: inline-flex;
-        color: #000000;
-    }
-}
-
-@media all and (max-width: 883px) {
-
-    #mainData{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    #white-list-sheet{
-        margin-left: 0;
-        margin-right: 0;
-        overflow:scroll;
-        width: 250px;
-    }
-    #header-white-list-sheet {
-        text-align: left;
-        width: 100%;
-        font-size: 0.8em;
-        text-align: center;
-    }
-    #video{
-        display: none;
-    }
-    #trailer{
-        display: inline-flex;
-        color: #000000;
-    }
-
-}
-
-
-@media all and (max-width: 650px) {
-
-    #mainData{
-        display: flex;
-        flex-direction: column;
-    }
-    #white-list-sheet{
-        margin-left: 0;
-        margin-right: 0;
-        overflow:scroll;
-        width: 150px;
-        height: 500px;
-        overflow: scroll;
-    }
-    #leftAside{
-        height: 500px;
-    }
-    #rightAside{
-        height: 500px;
-        overflow: scroll;
-    }
-    #header-white-list-sheet {
-        width: 100%;
-        font-size: 0.7em;
-        text-align: center;
-    }
-    #video{
-        display: none;
-    }
-    #trailer{
-        display: inline-flex;
-        color: #000000;
-    }
-
-}
-
-@media all and (max-width: 550px) {
-
-    #mainData{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-    }
-    #white-list-sheet{
-       display: none;
-    }
-    #leftAside{
-        height: 300px;
-        width: 100%;
-        margin-right: 10px;
-    }
-    #rightAside{
-        width: 100%;
-        height: 300px;
-        overflow: scroll;
-    }
-    #header-white-list-sheet {
-        width: 100%;
-        font-size: 0.7em;
-        text-align: center;
-    }
-    #video{
-        display: none;
-    }
-    #trailer{
-        display: inline-flex;
-        color: #000000;
-    }
-
-}
-
-
-/*madia za hedara*/
-@media all and (max-width: 1148px){
+@media only screen and (max-width: 1148px){
 
     header > div {
         padding-left: 3%;
@@ -623,10 +335,10 @@ footer section div{
 }
 
 
-@media all and (max-width: 830px) {
+@media only screen and (max-width: 830px) {
 
-    nav > ul > li {
-        margin-right: 0;
+    header nav > ul > li {
+    margin-right: 0;
 
     }
 
@@ -636,7 +348,7 @@ footer section div{
         justify-content: space-around;
         margin-bottom: 10px;
     }
-    #notifications {
+    header #notifications {
         color: #F8D75A;
     }
 }
@@ -649,7 +361,7 @@ footer section div{
         display: block;
         height: 111px;
     }
-    #logo{
+    header #logo{
         display: block;
         margin: 0 auto;
     }
@@ -674,40 +386,31 @@ footer section div{
         margin-bottom: 10px;
     }
 
-    section > div > ul > li:nth-child(2) {
+    header section > div > ul > li:nth-child(2) {
         margin-top: 10px;
     }
 
 }
 
 
-
-
 footer ul{
-	list-style-type: none;
+    list-style-type: none;
 }
-
-
-footer ul li{
-	list-style-type: none;
-	display:block;
-}
-
 
 footer a{
-	text-decoration: none;
-	color: white;
+    text-decoration: none;
+    color: white;
 }
 
 footer{
-	background-color: #3b5997;
-	width: 100%;
+    background-color: #3b5997;
+    width: 100%;
     padding-top: 3%;
     padding-left: 6%;
     padding-bottom: 1%;
-	font-family:"Comic Sans MS",Tahoma;
-	color: white;
-	font-size: 0.9em;
+    font-family:"Comic Sans MS",Tahoma;
+    color: white;
+    font-size: 0.9em;
 }
 
 footer section{
@@ -731,7 +434,7 @@ footer section:first-child div:hover{
 }
 
 footer section ul li a:hover{
-	color: #F7DA33;
+    color: #F7DA33;
 }
 
 footer section #blanks{
@@ -739,7 +442,7 @@ footer section #blanks{
 }
 
 footer section:nth-child(4) ul li a:hover{
-	opacity: 0.5;
+    opacity: 0.5;
 }
 
 footer section:last-child{
@@ -747,18 +450,18 @@ footer section:last-child{
 }
 
 footer section h5{
-	padding-bottom: 5%;
-	color: #F7DA33;
+    padding-bottom: 5%;
+    color: #F7DA33;
 }
 
 footer section ul li{
-	padding-bottom: 3%;
+    padding-bottom: 3%;
 }
 
 footer iframe{
-	background-color: #E9EDF0;
-	margin-left: 20%;
-	height:325px;
+    background-color: #E9EDF0;
+    margin-left: 20%;
+    height:325px;
 }
 
 @media only screen and (min-width: 780px) and (max-width: 960px){
