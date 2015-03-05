@@ -13,7 +13,11 @@ main {
     text-align: center;
 }
 
-#form>div {
+main h1 {
+    background-color: rgba(25, 25, 200, 0.5);
+}
+
+#form > div {
     margin: 2%;
 }
 
