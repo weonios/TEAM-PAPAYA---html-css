@@ -281,17 +281,27 @@ iframe{
     padding: 5px;
 }
 
-.info {
+.abilities {
+    display: inline-block;
+    margin: 1% 0 1% 8%;
+}
+
+.info-top {
     display: inline-block;
     margin: 1% 0 1% 15%;
+}
 
+.info-bottom {
+    display: inline-block;
+    margin: 1% 0 1% 10%;
 }
 
 #necessary-abilities {
-    text-align: center;
+    text-align: left;
 }
 
 #apply-button {
+    margin: 4%;
     text-align: center;
 }
 
